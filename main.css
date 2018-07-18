@@ -19,7 +19,9 @@ td, div {
     background-color: lightgrey;
     border-radius: 15px;
     padding: 1em;
+    border: 2px grey solid;
 }
+
 .palette {
     display: flex;
     flex-direction: column;

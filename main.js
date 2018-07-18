@@ -40,7 +40,7 @@ function MakePalette(){
     currentColor.style.backgroundColor = selectedColor;
     document.querySelector(".palette").insertBefore(currentColor, document.querySelector(".palette").children[1]);
 
-    var colors = ["white", "red", "orange", "yellow", "green", "lightgreen", "blue", "lightblue", "indigo","purple", "violet", "black"];
+    var colors = ["white", "red", "orange", "yellow", "green", "lightgreen", "chartreuse", "blue", "lightblue", "indigo","purple", "violet", "black", "brown", "pink"];
     for (i = 0; i < colors.length; i++){
         var colorCell = document.createElement("li");
         var color = document.createElement("div");
