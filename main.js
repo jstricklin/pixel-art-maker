@@ -15,7 +15,6 @@ function MakeGrid(){
         var row = document.createElement("tr");
         for (y = 0; y < 25; y++) {
             var td = document.createElement("td");
-            // MakeCell(td);
             var cell = MakeCell(td);
             cells.push(cell = { pixel: cell, xPos: x, yPos: y });
             row.appendChild(td);
@@ -40,7 +39,7 @@ function MakePalette(){
     currentColor.style.backgroundColor = selectedColor;
     document.querySelector(".palette").insertBefore(currentColor, document.querySelector(".palette").children[1]);
 
-    var colors = ["white", "red", "orange", "yellow", "green", "lightgreen", "chartreuse", "blue", "lightblue", "indigo","purple", "violet", "black", "brown", "pink"];
+    var colors = ["white", "red", "orange", "yellow", "green", "lightgreen", "chartreuse", "blue", "lightblue", "indigo","purple", "violet", "black","grey", "brown"];
     for (i = 0; i < colors.length; i++){
         var colorCell = document.createElement("li");
         var color = document.createElement("div");
